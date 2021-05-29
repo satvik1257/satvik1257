@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            Arrays
+        </title>
+    </head>
+    <body>
+        <p>
+            How to declare array
+            <h4 id="declare array"></h4>
+        </p>
+        <hr>
+        <p>
+            How to fetch first element
+            <h4 id="first element"></h4>
+        </p>
+        <hr>
+        <p>
+            How to fetch second element
+            <h4 id="second element"></h4>
+        </p>
+        <hr>
+        <p>
+            How to fetch third element
+            <h4 id="third element"></h4>
+        </p>
+        <hr>
+<p>
+    lenghth of the Arrays
+    <h4 id="length of array"></h4>
+</p>
+<hr>
+    <p>
+        loop of Arrays
+        <h4 id="loop of array"></h4>
+    </p>    
+    <hr>
+    <p>
+        add first element end of array
+        <h4 id="first element at end"></h4>
+    </p>
+    <hr>
+   
+    <p>
+        add element at first
+<h4 id="element at first"></h4>
+    </p>
+    <hr>
+    <p>
+        sort
+        <h4 id="sort"></h4>
+    </p>
+    <hr>
+    </body>
+    <script>
+        var fruits=["apple","mango","banana"];
+console.log(fruits);
+document.getElementById("declare array").innerHTML=fruits;
+var firstarray=fruits[0];
+console.log(firstarray);
+document.getElementById("first element").innerHTML=firstarray;
+var secondarray=fruits[1];
+console.log(secondarray);
+document.getElementById("second element").innerHTML=secondarray;
+var thirdarray=fruits[2];
+console.log(thirdarray);
+document.getElementById("third element").innerHTML=thirdarray;
+var length=fruits.length;
+console.log(length);
+document.getElementById("length of array");
+var arrayvalue="";
+for(i=0;i<fruits.length;i++){
+    console.log(fruits[i]);
+   arrayvalue=arrayvalue+fruits[i]+"<br>";
+}
+document.getElementById("loop of array").innerHTML=arrayvalue;
+fruits.push("lemon");
+console.log(fruits);
+document.getElementById("first element at end").innerHTML = fruits;
+fruits.push("cherry");
+console.log(fruits);
+document.getElementById("element at first").innerHTML = fruits
+</html>
