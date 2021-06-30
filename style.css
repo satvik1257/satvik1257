@@ -1,24 +1,21 @@
-body{
-    text-align: center;
-    background-image: linear-gradient(pink,lavender,yellow);
+.body_background 
+{
+    background-position: center;
+    background-size:contain;
+	background:url(Grass.jpg);
 }
-#family_img{
-    width: 290px;
+#myCanvas
+{
+    border-width:10px;
+    border-style:ridge;
+	background-color:forestgreen;
 }
-button{
-    font-size: 25px;
-    background-color: bisque;
-    border-radius: 20%;
-    color: black;
+
+
+#hd3{
+	display: inline-block;
+	color: red;
+	background-color: aliceblue;
+	font-family: fantasy;
 }
-h1{
-    font-size: 40px;
-    color: blue;
-    text-decoration: underline;
-}
-h3{
-    font-size: 30px;
-    color: purple;
-    font-weight: bold;
-    text-decoration: underline;
-}
+
