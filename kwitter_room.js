@@ -20,3 +20,17 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
        Room_names = childKey;
       });});}
 
+      function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
+        Room_names = childKey;
+       
+        console.log("Room name is"+Room_names);
+        row="<div class='room_name' id="+Room_names+" onclick='RedirectToRoomName(this.id)'>#"+Room_names+"</div><hr>";
+       //End code
+       });});}
+ getData();
+ function RedirectToRoomName(name)
+ {
+ console.log(name);
+ localStorage.setItem("room_name",name);
+ window.location="kwitter_room.html"; 
+ }
